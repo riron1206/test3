@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="camera.css" />
+  <!-- Load TensorFlow.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.11.7"></script>
+  <!-- Load Posenet -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet@0.1.2"></script>
+  <title>Body keypoints detection</title>
+</head>
+<body>
+
+<h1 id="msg">Please hands up.</h1> 
+<div id="info" style='display:none'>
+</div>
+<canvas id="cvs"></canvas>
+<video id="vid" autoplay playsinline></video>
+<div id="capturebox">
+  <img id="capture" src="blank.png" />
+</div>
+
+<script src="camera.js"></script>
+</body>
+</html>

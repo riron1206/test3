@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  background: #FFF;
+}
+
+#capturebox {
+  position: absolute;
+  top: 10px; right: 10px;
+  transform-origin: right top;
+  transform: scale(.5);
+}
+
+#vid {
+  display: none;
+//  transform: rotateZ(180deg); /* なぜか天地反転するので天地反転し返す */
+}
+
+#cvs {
+  display: block;
+  position: absolute;
+  top: 10%; left: 0;
+  width: 100%; height: 100%;
+}
+
+#msg {
+  margin: 10px;
+}
